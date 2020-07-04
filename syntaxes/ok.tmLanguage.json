@@ -1,0 +1,76 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ok",
+	"patterns": [
+		{
+			"comment": "Line comments",
+			"begin": "//",
+			"end": "$",
+			"name": "comment.line.double-slash.go"
+		},
+		{
+			"comment": "Bool literals",
+			"patterns": [{
+				"name": "constant.language.ok",
+				"match": "\\b(true|false)\\b"
+			}]
+		},
+		{
+			"comment": "Character literals",
+			"name": "string.quoted.single.ok",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.ok",
+					"match": "\\\\."
+				}
+			]
+		},
+		{
+			"comment": "Data literals",
+			"name": "string.quoted.triple.ok",
+			"begin": "`",
+			"end": "`"
+		},
+		{
+			"comment": "Numbers literals",
+			"match": "-?\\d+(.\\d+)?",
+			"name": "constant.numeric.ok"
+		},
+		{
+			"comment": "String literals",
+			"name": "string.quoted.double.ok",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.ok",
+					"match": "\\\\."
+				}
+			]
+		},
+		{
+			"comment": "Logical operators",
+			"patterns": [{
+				"name": "keyword.control.ok",
+				"match": "\\b(and|or|not)\\b"
+			}]
+		},
+		{
+			"comment": "Types",
+			"patterns": [{
+				"name": "support.type.ok",
+				"match": "\\b(any|bool|char|data|number|string)\\b"
+			}]
+		},
+		{
+			"comment": "Keywords",
+			"patterns": [{
+				"name": "keyword.control.ok",
+				"match": "\\b(assert|break|case|continue|else|for|func|if|import|in|return|switch|test)\\b"
+			}]
+		}
+	],
+	"scopeName": "source.ok"
+}

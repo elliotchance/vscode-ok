@@ -1,0 +1,26 @@
+{
+    "name": "ok",
+    "displayName": "ok",
+    "description": "The OK Programming Language",
+    "version": "1.0.0",
+    "publisher": "elliotchance",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ok",
+            "aliases": ["ok", "ok"],
+            "extensions": [".ok",".okt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ok",
+            "scopeName": "source.ok",
+            "path": "./syntaxes/ok.tmLanguage.json"
+        }]
+    }
+}
