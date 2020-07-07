@@ -1,26 +1,41 @@
 {
-    "name": "ok",
-    "displayName": "ok",
-    "description": "The OK Programming Language",
-    "version": "1.0.0",
-    "publisher": "elliotchance",
-    "engines": {
-        "vscode": "^1.46.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "contributes": {
-        "languages": [{
-            "id": "ok",
-            "aliases": ["ok", "ok"],
-            "extensions": [".ok",".okt"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "ok",
-            "scopeName": "source.ok",
-            "path": "./syntaxes/ok.tmLanguage.json"
-        }]
-    }
+	"name": "ok",
+	"displayName": "ok",
+	"description": "The OK Programming Language",
+	"version": "1.0.1",
+	"publisher": "elliotchance",
+	"engines": {
+		"vscode": "^1.46.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "ok",
+				"aliases": [
+					"ok",
+					"ok"
+				],
+				"extensions": [
+					".ok",
+					".okt"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "ok",
+				"scopeName": "source.ok",
+				"path": "./syntaxes/ok.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "650c0c71-b3b9-45f1-92c2-1bb80ca732fb",
+		"publisherDisplayName": "Elliot Chance",
+		"publisherId": "43b004fa-4863-48c5-b13e-f3f3011159d2"
+	}
 }
