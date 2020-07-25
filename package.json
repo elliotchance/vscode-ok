@@ -2,7 +2,7 @@
 	"name": "ok",
 	"displayName": "ok",
 	"description": "The OK Programming Language",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"publisher": "elliotchance",
 	"engines": {
 		"vscode": "^1.46.0"
@@ -27,9 +27,9 @@
 		],
 		"grammars": [
 			{
+				"path": "./syntaxes/ok.tmLanguage.json",
 				"language": "ok",
-				"scopeName": "source.ok",
-				"path": "./syntaxes/ok.tmLanguage.json"
+				"scopeName": "source.ok"
 			}
 		]
 	},
