@@ -6,14 +6,27 @@
 			"comment": "Line comments",
 			"begin": "//",
 			"end": "$",
-			"name": "comment.line.double-slash.go"
+			"name": "comment.line.double-slash.ok",
+			"patterns": [
+				{
+					"name": "constant.character.escape.ok",
+					"match": "\\\\."
+				},
+				{
+					"begin": "TODO",
+					"end": "$",
+					"name": "keyword.todo"
+				}
+			]
 		},
 		{
 			"comment": "Bool literals",
-			"patterns": [{
-				"name": "constant.language.ok",
-				"match": "\\b(true|false)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "constant.language.ok",
+					"match": "\\b(true|false)\\b"
+				}
+			]
 		},
 		{
 			"comment": "Character literals",
@@ -35,7 +48,7 @@
 		},
 		{
 			"comment": "Numbers literals",
-			"match": "-?\\d+(.\\d+)?",
+			"match": "\\b-?\\d+(.\\d+)?\\b",
 			"name": "constant.numeric.ok"
 		},
 		{
@@ -47,29 +60,45 @@
 				{
 					"name": "constant.character.escape.ok",
 					"match": "\\\\."
+				},
+				{
+					"begin": "{",
+					"end": "}",
+					"name": "meta.embedded.inline.ok",
+					"patterns": [
+						{
+							"include": "source.ok"
+						}
+					]
 				}
 			]
 		},
 		{
 			"comment": "Logical operators",
-			"patterns": [{
-				"name": "keyword.control.ok",
-				"match": "\\b(and|or|not)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.ok",
+					"match": "\\b(and|or|not)\\b"
+				}
+			]
 		},
 		{
 			"comment": "Types",
-			"patterns": [{
-				"name": "support.type.ok",
-				"match": "\\b(any|bool|char|data|number|string)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "support.type.ok",
+					"match": "\\b(any|bool|char|data|number|string)\\b"
+				}
+			]
 		},
 		{
 			"comment": "Keywords",
-			"patterns": [{
-				"name": "keyword.control.ok",
-				"match": "\\b(assert|break|case|continue|else|for|func|if|import|in|return|switch|test)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.ok",
+					"match": "\\b(assert|break|case|continue|else|for|func|if|import|in|return|switch|test|try|raise|on|finally)\\b"
+				}
+			]
 		}
 	],
 	"scopeName": "source.ok"
