@@ -2,7 +2,7 @@
 	"name": "ok",
 	"displayName": "ok",
 	"description": "The OK Programming Language",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"publisher": "elliotchance",
 	"engines": {
 		"vscode": "^1.46.0"
