@@ -2,8 +2,9 @@
 	"name": "ok",
 	"displayName": "ok",
 	"description": "The OK Programming Language",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"publisher": "elliotchance",
+	"repository": "https://github.com/elliotchance/vscode-ok",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
