@@ -96,7 +96,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.ok",
-					"match": "\\b(assert|break|case|continue|else|for|func|if|import|in|return|switch|test|try|raise|on|finally)\\b"
+					"match": "\\b(assert|break|case|continue|else|for|func|if|import|in|return|switch|test|try|raise|on|finally|is)\\b"
 				}
 			]
 		}
